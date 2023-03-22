@@ -5,7 +5,7 @@
 % Boolean value 'B' must be set equal to 1 if for a logarithmic scale,
 % otherwise set it equal to 0.
 
-%% plot_fun
+%% plot_sph
 %
 %  INPUT:
 %
