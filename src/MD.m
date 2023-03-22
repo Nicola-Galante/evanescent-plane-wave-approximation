@@ -2,7 +2,7 @@
 %
 % The extremal point system of degree 's-1' and related weights are
 % retrieved from the folder 'MD' (Maximum Determinant), the content of
-% which is available at this link: //web.maths.unsw.edu.au/~rsw/Sphere/.
+% which is available at this link: //web.maths.unsw.edu.au/~rsw/Sphere.
 
 %% MD
 %
