@@ -82,7 +82,7 @@ stab=norm(xi)/norm(M(:,3))
 
 ## Approximation by evanescent plane waves
 
-
+We construct the *evanescent plane wave approximation set* thanks to the so-called `sobol` strategy. We first sample `P` points in $[0,1]^4$.
 
 
 
