@@ -53,7 +53,7 @@ b=sqrt(WX).*u(X);
 
 We construct the *propagative plane wave approximation set* by using extremal points:
 ````
-d=MD(Ps); d=d(:,1:3)'; W=sqrt(1/P);
+d=MD(sqrt(P)); d=d(:,1:3)'; W=sqrt(1/P);
 ````
 We define the linear system *matrix* `A` as:
 ````
@@ -138,12 +138,12 @@ The following convenience function can expedite the above approximation process 
 It can be verified that the relative residual achieved now is extremely close to machine precision (almost 14 digits of accuracy):
 ````
 acc
-# acc = 
+# acc = 3.6097e-14
 ````
 The size of the coefficients is also greatly reduced:
 ````
 stab/norm(M(:,3))
-# stab/norm(M(:,3)) = 
+# stab/norm(M(:,3)) = 0.3372
 ````
 
 
