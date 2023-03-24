@@ -27,4 +27,4 @@ for l=0:L
     M=[M;l*ones(2*l+1,1),(-l:l)',ulm];
 end
 ````
-The coefficients $u_{\ell}^m$, for $0\leq|m|\leq \ell$, within the expansion are products of normally-distributed random numbers (with mean 0 and standard deviation 1) and the scaling factors $(\max\{1,\ell-\kappa\})^{-1}$. Since the coefficients of any Helmholtz solution decay in modulus as $o(\ell^{-1})$ for $\ell \rightarrow \infty$, this scenario is quite challenging.
+The coefficients $u_{\ell}^m$, for $0\leq|m|\leq \ell$, within the expansion are products of normally-distributed random numbers (with mean 0 and standard deviation 1) and the scaling factors $(\text{max}\{1,\ell-\kappa\})^{-1}$. Since the coefficients of any Helmholtz solution decay in modulus as $o(\ell^{-1})$ for $\ell \rightarrow \infty$, this scenario is quite challenging.
