@@ -74,10 +74,12 @@ err=@(x)abs(U(x)-u(x));
 We can calculate the *relative residual* `acc` to gauge the level of precision achieved.
 ````
 acc=norm(A*xi-b)/norm(b)
+# acc = 0.0413
 ````
 We did not achieve any accuracy at all! This is because the coefficients `xi` are too large.
 ````
 stab=norm(xi)/norm(M(:,3))
+# stab = 1.8008e+12
 ````
 
 ## Approximation by evanescent plane waves
@@ -115,14 +117,33 @@ err=@(x)abs(U(x)-u(x));
 We compute the relative residual `acc` as a measure of the accuracy.
 ````
 acc=norm(A*xi-b)/norm(b)
+# acc = 7.2877e-10
 ````
 We roughly get 8 digits of accuracy! The size of the coefficients remains quite high:
 ````
 stab=norm(xi)/norm(M(:,3))
+# stab = 858.6306
 ````
 
 ## Down to machine precision
 
-
+Let's raise the number of evanescent plane waves `P`.
+````
+P=9*(L+1)^2;
+````
+The following convenience function can expedite the above approximation process significantly.
+````
+[U,err,acc,stab] = Dirichlet_sampling(k,u,L,P,e,'sobol');
+````
+It can be verified that the relative residual achieved now is extremely close to machine precision (almost 14 digits of accuracy):
+````
+acc
+# acc = 
+````
+The size of the coefficients is also greatly reduced:
+````
+stab/norm(M(:,3))
+# stab/norm(M(:,3)) = 
+````
 
 
