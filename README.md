@@ -6,4 +6,4 @@ The numerical recipe proposed here has been tailored for the 3D setting and exte
 
 # Documentation
 
-The MATLAB
+The MATLAB code is available in `src`. For this to work properly it is necessary to download the extremal point sets from [https://web.maths.unsw.edu.au/~rsw/Sphere/](https://web.maths.unsw.edu.au/~rsw/Sphere/). Moreover, the `example` section contains a MATLAB live script that enables running some code and plaiyng the parameters, as well as a static version of the same script.
