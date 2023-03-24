@@ -4,6 +4,6 @@ The recent results presented within the paper [*Stable approximation of Helmholt
 
 The numerical recipe proposed here has been tailored for the 3D setting and extended with new sampling strategies involving extremal system of points (see [https://web.maths.unsw.edu.au/~rsw/Sphere/](https://web.maths.unsw.edu.au/~rsw/Sphere/)). The results show the desired accuracy and bounded-coefficient stability, in line with the two-dimensional case.
 
-# Documentation
+## Play with the code!
 
-The MATLAB code is available in `src`. For this to work properly it is necessary to download the extremal point sets from [https://web.maths.unsw.edu.au/~rsw/Sphere/](https://web.maths.unsw.edu.au/~rsw/Sphere/). Moreover, the `example` section contains a MATLAB live script that enables running some code and plaiyng the parameters, as well as a static version of the same script.
+The MATLAB code is available in `src`. For this to work properly it is necessary to download the extremal point sets from [https://web.maths.unsw.edu.au/~rsw/Sphere/](https://web.maths.unsw.edu.au/~rsw/Sphere/). Moreover, the `example` section contains a MATLAB live script that enables running some code and plaiyng the parameters, as well as a static version of the same script. This provides a means of navigating through the construction of both propagative and evanescent plane wave approximation sets.
