@@ -83,8 +83,45 @@ stab=norm(xi)/norm(M(:,3))
 ## Approximation by evanescent plane waves
 
 We construct the *evanescent plane wave approximation set* thanks to the so-called `sobol` strategy. We first sample `P` points in $[0,1]^4$.
+````
+points=net(scramble(sobolset(4),'MatousekAffineOwen'),P)';
+````
+Then we determine the *parameters* related to the evanescent plane wave set thanks to the *Inverse Transform Sampling technique*, namely
+````
+th1=acos(1-2*points(1,:)); th2=2*pi*points(2,:); th3=2*pi*points(3,:); zeta=inversion(k,L,points(4,:),1e-12);
+````
+It is possible to choose other types of sampling strategies, for instance `deterministic`, `random`, `extremal_sobol`, and `extremal_random`.
 
+These parameters are used to construct the evanescent plane wave approximation set.
+````
+d=direction_set(k,th1,th2,th3,zeta,'sobol'); W=sqrt(1./(P*TruncKernel(k,L,zeta,'sobol')));
+````
+We now proceed as previously done. Let's define the linear system matrix `A` as:
+````
+A=sqrt(WX).*approx_set(k,d,W,X);
+````
+We compute the coefficients of the approximation `xi` through the regularized SVD decomposition
+````
+e=1e-14; xi=solve_RSVD(A,b,e);
+````
+and define the solution approximation `U` as a superposition of evanescent plane waves.
+````
+U=@(x)approx_set(k,d,W,x)*xi;
+````
+We define the absolute error function `err`.
+````
+err=@(x)abs(U(x)-u(x)); 
+````
+We compute the relative residual `acc` as a measure of the accuracy.
+````
+acc=norm(A*xi-b)/norm(b)
+````
+We roughly get 8 digits of accuracy! The size of the coefficients remains quite high:
+````
+stab=norm(xi)/norm(M(:,3))
+````
 
+## Down to machine precision
 
 
 
