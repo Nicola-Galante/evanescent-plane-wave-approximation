@@ -1,4 +1,4 @@
-### Approximation of solution surrogates
+# Approximation of solution surrogates
 
 ## Target of the approximation problem
 
