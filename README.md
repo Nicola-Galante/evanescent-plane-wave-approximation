@@ -1,4 +1,6 @@
-# Wave Goodbye to Instability: Achieving Stable Approximations of Helmholtz Solutions in Spherical Domains Using Evanescent Plane Waves
+# Evanescent Plane Wave Approximation of Helmholtz Solutions in Spherical Domains
+
+## Wave Goodbye to Instability!
 
 The recent results presented within the paper [*Stable approximation of Helmholtz solutions by evanescent plane waves*](https://arxiv.org/abs/2202.05658) have led to significant developments in achieving stable Helmholtz solution approximations by plane wave superposition. The study shows that the numerical instability and ill-conditioning inherent in plane wave-based Trefftz methods can be effectively overcome with regularization techniques, provided there exist accurate approximations in the form of expansions with bounded coefficients. While propagative plane waves fail to yield stable approximations due to the exponential growth of the expansion coefficients, evanescent plane waves, which contain high-Fourier modal content, provide both accurate and stable results. The developed numerical approach -- available at [https://github.com/EmileParolin/evanescent-plane-wave-approx](https://github.com/EmileParolin/evanescent-plane-wave-approx) -- results in substantial improvements when compared to conventional propagative plane wave schemes.
 
