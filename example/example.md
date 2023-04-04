@@ -35,7 +35,7 @@ Here we plot the real part of the solution surrogate `u`. The parameters `n1` an
 ````
 n1=200; n2=400; plot_sph(u,n1,n2);
 ````
-<img src="/images/real.svg" width="500"> <img src="/images/real_sphere.svg" width="500">
+<img src="/images/real.png" width="500"> <img src="/images/real_sphere.png" width="500">
 
 ## Reconstruction method
 
@@ -92,7 +92,7 @@ Here we plot the absolute error function `err`. The parameter `Clim` adjusts the
 ````
 Clim=[1e-4,1e-2]; plot_sph(err,n1,n2,Clim);
 ````
-<img src="/images/propagative.svg" width="500"> <img src="/images/propagative_sphere.svg" width="500">
+<img src="/images/propagative.png" width="500"> <img src="/images/propagative_sphere.png" width="500">
 
 ## Approximation by evanescent plane waves
 
@@ -140,7 +140,7 @@ Here we plot the absolute error function `err`.
 ````
 Clim=[1e-12,1e-9]; plot_sph(err,n1,n2,Clim);
 ````
-<img src="/images/evanescent.svg" width="500"> <img src="/images/evanescent_sphere.svg" width="500">
+<img src="/images/evanescent.png" width="500"> <img src="/images/evanescent_sphere.png" width="500">
 
 ## Down to machine precision
 
@@ -166,4 +166,4 @@ Here we plot again the absolute error function `err`.
 ````
 Clim=[1e-15,1e-14]; plot_sph(err,n1,n2,Clim);
 ````
-<img src="/images/evanescent2.svg" width="500"> <img src="/images/evanescent2_sphere.svg" width="500">
+<img src="/images/evanescent2.png" width="500"> <img src="/images/evanescent2_sphere.png" width="500">
