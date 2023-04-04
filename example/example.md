@@ -88,6 +88,11 @@ We did not achieve any accuracy at all! This is because the coefficients `xi` ar
 stab=norm(xi)/norm(M(:,3))
 # stab = 1.8008e+12
 ````
+Here we plot the absolute error function `err`. The parameter `Clim` adjusts the minimum colorbar values for the two displayed plots.
+````
+Clim=[1e-4,1e-2]; plot_sph(err,n1,n2,Clim);
+````
+<img src="/images/propagative.svg" width="500"> <img src="/images/propagative_sphere.svg" width="500">
 
 ## Approximation by evanescent plane waves
 
