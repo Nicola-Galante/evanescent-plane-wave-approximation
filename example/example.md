@@ -35,7 +35,7 @@ Here we plot the real part of the solution surrogate `u`. The parameters `n1` an
 ````
 n1=200; n2=400; plot_sph(u,n1,n2);
 ````
-![real part of the solution surrogate `u`.](https://github.com/Nicola-Galante/evanescent-plane-wave-approximation/edit/main/images/real.svg)
+![real part of the solution surrogate `u`.](https://github.com/Nicola-Galante/evanescent-plane-wave-approximation/edit/main/images/real.jpg)
 ![real part of the solution surrogate `u`.](https://github.com/Nicola-Galante/evanescent-plane-wave-approximation/edit/main/images/real_sphere.svg)
 
 ## Reconstruction method
