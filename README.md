@@ -2,7 +2,7 @@
 
 ## Wave Goodbye to Instability!
 
-<div><img src="/images/README_image.png" width="250px" align="right"></div>
+<div><img src="/images/README_image.png" width="300px" align="right"></div>
 
 The recent results presented within the paper [*Stable approximation of Helmholtz solutions by evanescent plane waves*](https://arxiv.org/abs/2202.05658) have led to significant developments in achieving stable Helmholtz solution approximations by plane wave superposition. The study shows that the numerical instability and ill-conditioning inherent in plane wave-based Trefftz methods can be effectively overcome with regularization techniques, provided there exist accurate approximations in the form of expansions with bounded coefficients. While propagative plane waves fail to yield stable approximations due to the exponential growth of the expansion coefficients, evanescent plane waves, which contain high Fourier modal content, provide both accurate and stable results. The developed numerical approach &mdash; available at [https://github.com/EmileParolin/evanescent-plane-wave-approx](https://github.com/EmileParolin/evanescent-plane-wave-approx) &mdash; results in substantial improvements when compared to conventional propagative plane wave schemes.
 
