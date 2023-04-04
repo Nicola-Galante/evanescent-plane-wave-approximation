@@ -35,8 +35,7 @@ Here we plot the real part of the solution surrogate `u`. The parameters `n1` an
 ````
 n1=200; n2=400; plot_sph(u,n1,n2);
 ````
-<img src="/images/real.png" width="48">
-![real part of the solution surrogate `u`.](/images/real.png)
+<img src="/images/real.png" width="500">
 
 ## Reconstruction method
 
