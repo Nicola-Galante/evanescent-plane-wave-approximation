@@ -136,6 +136,11 @@ We roughly get 8 digits of accuracy! The size of the coefficients remains quite 
 stab=norm(xi)/norm(M(:,3))
 # stab = 858.6306
 ````
+Here we plot the absolute error function `err`.
+````
+Clim=[1e-12,1e-9]; plot_sph(err,n1,n2,Clim);
+````
+<img src="/images/evanescent.svg" width="500"> <img src="/images/evanescent_sphere.svg" width="500">
 
 ## Down to machine precision
 
@@ -157,5 +162,8 @@ The size of the coefficients is also greatly reduced:
 stab/norm(M(:,3))
 # stab/norm(M(:,3)) = 0.3372
 ````
-
-
+Here we plot again the absolute error function `err`.
+````
+Clim=[1e-15,1e-14]; plot_sph(err,n1,n2,Clim);
+````
+<img src="/images/evanescent2.svg" width="500"> <img src="/images/evanescent2_sphere.svg" width="500">
