@@ -21,7 +21,8 @@
 
 function T = AssociatedLegendre(l,x)
 
-lx=length(x); T=zeros(l+1,l+1,lx); [Q,V]=LegendreDiag2(l,x);
+lx=length(x); if n==0; T=ones(1,1,lx); return; end
+T=zeros(l+1,l+1,lx); [Q,V]=LegendreDiag2(l,x);
 
 for m=0:l-2
     W = LegendreLine(l,m,Q(:,m+1),V(:,m+1),x);
