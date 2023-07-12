@@ -21,7 +21,7 @@
 
 function T = AssociatedLegendre(l,x)
 
-lx=length(x); if n==0; T=ones(1,1,lx); return; end
+lx=length(x); if l==0; T=ones(1,1,lx); return; end
 T=zeros(l+1,l+1,lx); [Q,V]=LegendreDiag2(l,x);
 
 for m=0:l-2
